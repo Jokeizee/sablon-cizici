@@ -32,6 +32,7 @@ jobs:
 
       - name: APK Derleme (Gercek Uretim Surumu)
         run: |
+          export NODE_OPTIONS="--max-old-space-size=4096"
           cd android
           ./gradlew assembleRelease
 
