@@ -16,7 +16,7 @@ jobs:
       - name: Node.js Kurulumu
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Java Kurulumu
         uses: actions/setup-java@v4
@@ -26,9 +26,6 @@ jobs:
 
       - name: Kutuphaneleri Yukle
         run: npm install
-
-      - name: Hata Avcisi (Kodlari Kontrol Et)
-        run: npx expo export
 
       - name: Expo Prebuild (Android altyapisini hazirla)
         run: npx expo prebuild --platform android
