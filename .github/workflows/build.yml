@@ -32,9 +32,9 @@ jobs:
 
       - name: APK Derleme (Gercek Uretim Surumu)
         run: |
-          export NODE_OPTIONS="--max-old-space-size=2048"
+          export NODE_OPTIONS="--max-old-space-size=3072"
           cd android
-          ./gradlew assembleRelease -Dorg.gradle.jvmargs="-Xmx2048m" -Dorg.gradle.workers.max=1
+          ./gradlew assembleRelease --no-daemon -Dorg.gradle.jvmargs="-Xmx1536m" -Dorg.gradle.workers.max=1
 
       - name: APK'yi Indirilebilir Yap
         uses: actions/upload-artifact@v4
