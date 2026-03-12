@@ -1,14 +1,13 @@
 {
   "expo": {
-    "name": "sa",
-    "slug": "snack-69f3c33d-9f2f-4a56-b35e-3f722fb0c681",
+    "name": "Şablon Çizici",
+    "slug": "sablon-cizici",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,7 +19,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.jokeizee.sabloncizici"
     },
     "web": {
       "favicon": "./assets/favicon.png"
